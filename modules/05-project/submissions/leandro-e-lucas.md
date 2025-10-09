@@ -7,7 +7,7 @@
 
 ## 🔍 Descrição do Projeto
 
-Breve parágrafo explicando a ideia do projeto, o que foi desenvolvido por cada integrante e como ele se relaciona com os conteúdos do roadmap.
+Programa em Python com interface gráfica (Tkinter) para compactação de arquivos nos formatos ZIP, TAR e TAR.GZ.
 
 ## 📚 O que Aprendemos
 
