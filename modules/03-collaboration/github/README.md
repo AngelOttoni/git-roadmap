@@ -1,9 +1,8 @@
-<!-- [WIP] Work in Progress -->
-
 # 🤝 Colaboração com GitHub
 
->Neste submódulo você encontrará materiais para aprender a colaborar usando o GitHub, plataforma amplamente usada para hospedagem de código e desenvolvimento colaborativo.
+>Neste submódulo você encontrará materiais para aprender a colaborar usando o **GitHub**, uma das plataformas mais populares para hospedagem de código e desenvolvimento colaborativo.
 
+O GitHub oferece ferramentas que facilitam a colaboração entre desenvolvedores, como **Pull Requests**, **revisão de código**, **issues** e **integração contínua**.
 ---
 
 ## Tópicos abordados
@@ -13,7 +12,7 @@
 - Revisão de código: boas práticas e ferramentas
 - Resolução de conflitos via GitHub
 - Uso de issues para gerenciamento de tarefas
-- Integração com GitHub Actions para CI/CD básica
+- ~~Integração com GitHub Actions para CI/CD básica~~ <!-- [WIP] Work in Progress -->
 
 ---
 
@@ -26,6 +25,7 @@
 * 📄 [Quickstart for GitHub Issues](https://docs.github.com/pt/issues/tracking-your-work-with-issues/configuring-issues/quickstart)
 * 🎥 [28. O que são issues? - Git e Github na Vida Real](https://www.youtube.com/watch?v=JKNaqYJXxbI)
 * 🎥 [Resolvendo problemas com issues no GitHub?](https://www.youtube.com/watch?v=1_Ler6OE5d4)
+
 ---
 
 ## Fluxo básico: GitHub Flow
@@ -39,7 +39,7 @@ O GitHub Flow é um fluxo simples e popular para colaboração que consiste em:
 
 ---
 
-## Exemplo prático: Criar um Pull Request
+## Exemplo prático: Criando um Pull Request
 
 ```bash
 git checkout -b feature/novafuncionalidade
@@ -49,7 +49,7 @@ git commit -m "feat: adiciona nova funcionalidade X"
 git push origin feature/novafuncionalidade
 ```
 
-Após isso, abra um Pull Request no GitHub na interface web.
+Após isso, abra um Pull Request no **GitHub** na interface web.
 
 ---
 
@@ -58,14 +58,14 @@ Após isso, abra um Pull Request no GitHub na interface web.
 * Use títulos claros e objetivos.
 * Descreva o que foi feito e o motivo.
 * Relacione issues quando aplicável (ex: `Closes #123`).
-* Peça revisão de colegas.
-* Faça commits pequenos e atômicos.
+* Faça commits pequenos e organizados.
+* Peça revisão de outros colaboradores.
 
 ---
 
 ## Exercício prático
 
-1. Crie uma branch nova e faça uma alteração simples num arquivo README.md.
+1. Crie uma branch nova e faça uma alteração simples num arquivo (Por exemplo: `README.md`).
 2. Faça commit com mensagem clara.
 3. Suba a branch para o remoto.
 4. Abra um Pull Request.
@@ -76,7 +76,7 @@ Após isso, abra um Pull Request no GitHub na interface web.
 
 ## Dicas para colaborar no GitHub
 
-- Sempre atualize sua branch com a branch principal antes de abrir um PR
+- Sempre atualize sua branch com a branch principal antes de abrir um PR (`git pull`)
 - Escreva descrições claras e objetivas nos PRs
 - Use templates de PR para padronizar informações
 - Faça revisões construtivas e respeitosas
