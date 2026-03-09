@@ -2,7 +2,7 @@
 
 - **Integrantes:** Nome 1 (@usuario1) e Nome 2 (@usuario2)
 - **Projeto:** [Título do projeto]
-- **Repositório:** [link para o GitHub do projeto]
+- **Repositório:** [link para o GitHub/GitLab do projeto]
 - **Tecnologias utilizadas:** Python, OpenAI API, Git, GitHub, etc.
 - **Link para Demo (opcional):** [coloque aqui, se houver]
 
