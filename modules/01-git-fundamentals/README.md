@@ -163,7 +163,17 @@ git push -u origin main
 
 ---
 
-## 9. Clonar um repositório existente
+## 9. Atualizar seu repositório local
+
+Para trazer mudanças do repositório remoto:
+
+```bash
+git pull
+```
+
+---
+
+## 10. Clonar um repositório existente
 
 Você também pode baixar um repositório existente utilizando:
 
