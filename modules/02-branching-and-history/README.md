@@ -1,11 +1,23 @@
-# 🌿 Módulo 02 – Branching, Commits e Workflows
+# 🌿 **Módulo 02 – Branching and History**
 
->Neste módulo, vamos aprofundar o uso do Git em um contexto colaborativo. Você aprenderá como ramificar o seu projeto (branching), seguir boas práticas para escrever mensagens de commit e entender os principais workflows usados em times de desenvolvimento. Esses conceitos são essenciais para trabalhar de forma organizada e eficiente em equipe.
+Neste módulo você vai aprofundar o uso do Git trabalhando com **branches**, **histórico de commits** e boas práticas para registrar mudanças no projeto.
 
-## 🎯 Objetivos
-✅ Aprender como criar branches     
-✅ Aplicar padrões semânticos em mensagens de commit    
-✅ Compreender e aplicar workflows de desenvolvimento colaborativo  
+Esses conceitos são essenciais para manter projetos organizados, especialmente quando várias pessoas trabalham no mesmo repositório.
+
+Ao final deste módulo você compreenderá como o Git gerencia **múltiplas linhas de desenvolvimento** e como integrar mudanças de forma segura.
+
+---
+
+## 🎯 **Objetivos**
+
+Ao concluir este módulo você deverá ser capaz de:
+
+* criar e gerenciar **branches**
+* compreender como o Git organiza o **histórico de commits**
+* integrar mudanças utilizando **merge**
+* entender o conceito de **rebase**
+* resolver **conflitos de merge**
+* explorar o histórico do projeto
 
 ---
 
@@ -26,103 +38,201 @@
 
 ## 🌿 Branching
 
->**Branching** (ou "ramificação") é uma funcionalidade do Git que permite criar uma linha paralela de desenvolvimento. Com ela, você pode trabalhar em novas funcionalidades, corrigir bugs ou testar ideias sem afetar o código da `main` (linha principal do projeto).
+>Uma **branch** é uma linha paralela de desenvolvimento.
 
-**Branches são fundamentais para manter a organização do projeto e evitar conflitos quando várias pessoas trabalham simultaneamente.**
+Ela permite trabalhar em novas funcionalidades, correções ou experimentos **sem alterar diretamente a branch principal (`main`)**.
 
-### 🔹 Convenção sugerida para nomes de branches:
-- `feature/nome-da-funcionalidade` → Para novas funcionalidades
-- `fix/nome-do-bug` → Para correção de bugs
-- `docs/nome-da-doc` → Para alterações na documentação
-- `refactor/nome-da-alteracao` → Para melhorias internas de código (sem mudar comportamento)
-
->Essas convenções facilitam a leitura do histórico e a organização do trabalho na equipe.
+*Esse mecanismo é essencial para permitir que várias pessoas trabalhem simultaneamente no mesmo projeto.*
 
 ---
 
-## 📝 Commits
+## Criando e navegando entre branches
 
->Commits são os registros das alterações feitas no repositório. Cada commit deve representar uma mudança lógica e coesa no código, isso torna o histórico mais limpo, útil e fácil de entender.
+Criar uma nova branch:
 
-⚠️ Evite mensagens genéricas como “update” ou “ajustes”. Prefira mensagens claras e descritivas.
+```bash
+git branch minha-branch
+```
 
-### 🔹 Padrão de Commits Semânticos ([Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/))
+Criar e mudar para uma nova branch:
 
-**Formato:**  
+```bash
+git checkout -b minha-branch
+```
+
+Listar branches existentes:
+
+```bash
+git branch
+```
+
+### Convenção sugerida para nomes de branches
+
+> Embora o Git permita qualquer nome para branches, muitos projetos utilizam
+convenções para facilitar a organização do trabalho.
+
+Alguns exemplos comuns:
+
+- `feature/nome-da-funcionalidade`
+- `fix/nome-do-bug`
+- `docs/descricao-da-alteracao`
+- `refactor/nome-da-melhoria`
+
+Essas convenções ajudam a entender rapidamente o propósito da branch e são frequentemente utilizadas em workflows colaborativos.
+---
+
+# 🔄 Integrando mudanças com merge
+
+Após finalizar o trabalho em uma branch, você pode integrá-la à `main`.
+
+```bash
+git checkout main
+git merge minha-branch
+```
+
+O Git irá combinar o histórico das duas branches.
+
+Quando as alterações não entram em conflito, o merge acontece automaticamente.
+
+---
+
+# 🔀 Rebase (conceito)
+
+O **rebase** é uma alternativa ao merge para integrar mudanças entre branches.
+
+Enquanto o **merge preserva o histórico original das branches**, o **rebase reescreve o histórico**, movendo commits para uma nova base.
+
+Exemplo conceitual:
+
+```text
+main:     A---B---C
+feature:       D---E
+```
+
+Após um `rebase` da branch `feature` sobre `main`:
+
+```text
+main:     A---B---C
+feature:           D'---E'
+```
+
+⚠️ *O rebase pode deixar o histórico mais linear, mas deve ser usado com cuidado em branches compartilhadas.*
+
+---
+
+🔄 **Sobre a integração de branches veja mais detalhes em:**
+
+➡️ [Merge vs Rebase](./merge-vs-rebase.md)
+
+---
+
+# 🚨 Resolução de conflitos
+
+Conflitos podem ocorrer quando **duas branches modificam a mesma parte de um arquivo**.
+
+Quando isso acontece durante um merge ou rebase, o Git pede que você resolva manualmente o conflito.
+
+Use:
+
+```bash
+git status
+```
+
+para identificar arquivos em conflito.
+
+O Git marcará as diferenças diretamente no arquivo:
+
+```text
+<<<<<<< HEAD
+código atual
+=======
+código da outra branch
+>>>>>>> minha-branch
+```
+
+Você deve editar o arquivo escolhendo qual versão manter (ou combinando as duas).
+
+Depois de resolver o conflito:
+
+```bash
+git add <nome_do_arquivo>
+git commit "mensagem"
+```
+
+---
+
+# 📝 Boas práticas para commits
+
+Commits representam **unidades de mudança no projeto**.
+
+Cada commit deve representar **uma alteração lógica e coesa**.
+
+Evite mensagens genéricas como:
+
+```
+update
+ajustes
+mudanças
+```
+
+*Prefira mensagens claras e descritivas.*
+
+---
+
+## Conventional Commits
+
+Um padrão muito utilizado em projetos profissionais é o [**Conventional Commits**](https://www.conventionalcommits.org/pt-br/v1.0.0/).
+
+Formato:
 
 ```bash
 <tipo>: descrição curta
 ```
 
-**Exemplos:**  
+Exemplos:
 
-- `feat: adicionar função de busca de usuários`
-- `fix: corrigir bug na função de login`
-- `docs: atualizar README com exemplos`
+```
+feat: adicionar função de busca de usuários
+fix: corrigir bug na função de login
+docs: atualizar README
+```
 
-**Tipos mais usados:**  
+Tipos comuns:
 
-- `feat` → nova funcionalidade  
-- `fix` → correção de bug  
-- `docs` → documentação  
+* `feat` → nova funcionalidade
+* `fix` → correção de bug
+* `docs` → documentação
+* `refactor` → melhoria interna no código
+* `test` → testes
 - `style` → ajustes de formatação (espaços, quebras de linha etc.)
-- `refactor` → melhoria no código sem alterar a funcionalidade  
-- `test` → criação/alteração de testes  
 
 ---
 
-## 🔄 Workflows
+# 📜 Explorando o histórico do Git
 
->**Workflows** definem a forma como uma equipe estrutura o desenvolvimento de software com Git. Eles variam conforme o tamanho e a complexidade do projeto.
+O Git registra toda a evolução do projeto.
 
-### 📌 GitHub Flow (ideal para projetos simples e contínuos)
+Alguns comandos úteis:
 
-1. Criar uma branch a partir da `main`
-2. Fazer commits com alterações relacionadas
-3. Abrir um Pull Request (PR)
-4. Solicitar revisão
-5. Após aprovação, realizar merge com a `main`
+```bash
+git log
+git log --oneline
+git log --oneline --graph
+```
 
->Esse fluxo é ideal para projetos em que novas versões são liberadas com frequência.
+Esses comandos ajudam a entender como o projeto evoluiu ao longo do tempo.
 
-### 📌 Git Flow (ideal para projetos mais complexos ou com versões bem definidas)
+Para um resumo rápido dos principais comandos Git, consulte:
 
-**Principais branches:**
-
-* `main` → versão de produção
-* `develop` → onde novas funcionalidades são integradas antes da produção
-
-**Branches auxiliares:**
-
-* `feature/nome` → novas funcionalidades
-* `release/nome` → preparação de uma nova versão
-* `hotfix/nome` → correções urgentes diretamente na produção
-
->Esse fluxo é mais estruturado e ideal para equipes maiores.
+➡️ [`resources/cheatsheets.md`](../../resources/cheatsheets.md)
 
 ---
 
-## 🚀 Checklist do Módulo
+# 🚀 Checklist do módulo
 
-* [ ] Criar uma nova branch e navegar até ela (`git checkout -b`)
-* [ ] Fazer alterações e criar commits com mensagens semânticas
-* [ ] Enviar a branch para o repositório remoto (`git push -u origin`)
-* [ ] Abrir um Pull Request no GitHub
-* [ ] Revisar e fazer merge da branch na `main`
-
----
----
-
-> ℹ️ **Importante:**
->
-> Estratégias de branching, padrões de commits e workflows de desenvolvimento **podem variar bastante** entre empresas e equipes.
-> O que estou apresentando aqui é uma abordagem comum e funcional, mas:
->
-> * Algumas equipes usam [**Git Flow**](https://www.alura.com.br/artigos/git-flow-o-que-e-como-quando-utilizar), outras preferem [**GitHub Flow**](https://docs.github.com/pt/get-started/using-github/github-flow) ou [**Trunk-Based Development**](https://www.objective.com.br/insights/trunk-based-development/).
-> * Os commits podem seguir o padrão **Conventional Commits**, usar mensagens livres ou incluir **IDs de tickets** (ex: `feat(JIRA-123): novo componente`).
-> * O fluxo de trabalho pode exigir **revisão de código obrigatória**, **integração contínua**, **políticas de merge**, entre outros processos.
->
-> ✅ **Dica:** Sempre consulte as diretrizes da sua equipe ou projeto e adapte-se ao que fizer mais sentido no seu contexto de trabalho.
-
----
----
+* [ ] Criar uma nova branch (`git checkout -b`)
+* [ ] Fazer alterações no projeto
+* [ ] Criar commits com mensagens claras
+* [ ] Visualizar o histórico com `git log`
+* [ ] Integrar a branch com `merge`
+* [ ] Resolver um conflito simples de merge
