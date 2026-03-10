@@ -17,18 +17,6 @@ No GitLab, o principal mecanismo de colaboração é o **Merge Request (MR)**.
 
 ---
 
-## 📖 Materiais Recomendados
-
-* 📄 [GitHub Flow](https://guides.github.com/introduction/flow/)
-* 📄 [GitHub - Documentação sobre solicitações de pull](https://docs.github.com/pt/pull-requests)
-* 📄 [Como revisar Pull Requests](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/reviewing-changes-in-pull-requests)
-* 📄 [Sobre issues](https://docs.github.com/pt/issues/tracking-your-work-with-issues/about-issues)
-* 📄 [Quickstart for GitHub Issues](https://docs.github.com/pt/issues/tracking-your-work-with-issues/configuring-issues/quickstart)
-* 🎥 [28. O que são issues? - Git e Github na Vida Real](https://www.youtube.com/watch?v=JKNaqYJXxbI)
-* 🎥 [Resolvendo problemas com issues no GitHub?](https://www.youtube.com/watch?v=1_Ler6OE5d4)
-
----
-
 ## Fluxo básico: GitLab Flow
 
 O GitLab Flow combina o uso de branches, merge requests e integração contínua. Fluxo típico:
