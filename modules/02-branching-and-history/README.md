@@ -79,6 +79,7 @@ Alguns exemplos comuns:
 - `refactor/nome-da-melhoria`
 
 Essas convenções ajudam a entender rapidamente o propósito da branch e são frequentemente utilizadas em workflows colaborativos.
+
 ---
 
 # 🔄 Integrando mudanças com merge
@@ -120,7 +121,7 @@ feature:           D'---E'
 
 ---
 
-🔄 **Sobre a integração de branches veja mais detalhes em:**
+🔄 **Sobre `merge` e `rebase` veja mais detalhes em:**
 
 ➡️ [Merge vs Rebase](./merge-vs-rebase.md)
 
@@ -161,53 +162,6 @@ git commit "mensagem"
 
 ---
 
-# 📝 Boas práticas para commits
-
-Commits representam **unidades de mudança no projeto**.
-
-Cada commit deve representar **uma alteração lógica e coesa**.
-
-Evite mensagens genéricas como:
-
-```
-update
-ajustes
-mudanças
-```
-
-*Prefira mensagens claras e descritivas.*
-
----
-
-## Conventional Commits
-
-Um padrão muito utilizado em projetos profissionais é o [**Conventional Commits**](https://www.conventionalcommits.org/pt-br/v1.0.0/).
-
-Formato:
-
-```bash
-<tipo>: descrição curta
-```
-
-Exemplos:
-
-```
-feat: adicionar função de busca de usuários
-fix: corrigir bug na função de login
-docs: atualizar README
-```
-
-Tipos comuns:
-
-* `feat` → nova funcionalidade
-* `fix` → correção de bug
-* `docs` → documentação
-* `refactor` → melhoria interna no código
-* `test` → testes
-- `style` → ajustes de formatação (espaços, quebras de linha etc.)
-
----
-
 # 📜 Explorando o histórico do Git
 
 O Git registra toda a evolução do projeto.
@@ -218,6 +172,7 @@ Alguns comandos úteis:
 git log
 git log --oneline
 git log --oneline --graph
+git log --oneline --graph --decorate --all
 ```
 
 Esses comandos ajudam a entender como o projeto evoluiu ao longo do tempo.
