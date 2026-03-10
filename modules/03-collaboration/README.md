@@ -35,7 +35,7 @@ Ao final deste módulo você será capaz de:
 
 Recomendamos:
 
-1. Ler este README para entender os conceitos gerais de colaboração.
+1. Ler este `README` para entender os conceitos gerais de colaboração.
 2. Seguir o submódulo da plataforma que você utiliza.
 3. Fazer os exercícios práticos disponíveis em cada submódulo.
 4. Praticar colaborando em projetos reais ou simulados.
@@ -105,7 +105,7 @@ I -- No --> G
 1. Crie um repositório no GitHub ou GitLab.
 2. Clone o repositório localmente.
 3. Crie uma branch chamada `feature/exercicio-inicial`.
-4. Faça uma alteração simples em um arquivo README.md (ex: adicionar seu nome).
+4. Faça uma alteração simples em um arquivo `README.md` (ex: adicionar seu nome).
 5. Faça commit com uma mensagem clara.
 6. Envie a branch para o remoto.
 7. Abra um Pull Request (GitHub) ou Merge Request (GitLab).
