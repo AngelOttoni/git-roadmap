@@ -38,7 +38,7 @@ Este repositório é um **guia prático de estudos sobre versionamento de códig
 | [03 - Collaboration](./modules/03-collaboration) | Fluxos de colaboração no GitHub e GitLab (branches, PRs/MRs, revisão de código) | 🟡 Intermediário |
 | [04 - Workflows](./modules/04-workflows) | Apresenta algumas estratégias de workflow utilizadas em projetos reais | 🔵 Avançado |
 | [05 - Project](./modules/05-project) | Projeto prático final integrando todos os conceitos | 🏆 Prático |
-   > *Dependendo da plataforma utilizada, a submissão pode ocorrer através de:*
+   > *Dependendo da plataforma utilizada, a submissão do projeto final pode ocorrer através de:*
    > - Pull Request-PR (GitHub)
    > - Merge Request-MR (GitLab)
 
@@ -55,7 +55,7 @@ Este repositório é um **guia prático de estudos sobre versionamento de códig
    - [ ] Finalizei o módulo **03 - Collaboration**
    - [ ] Finalizei o módulo **04 - Workflows**
    - [ ] Finalizei o módulo **05 - Project**
-3. Faça os exercícios práticos e, *se quiser*, **abra Pull Requests/Merge Request para sugerir melhorias**.
+3. Faça os exercícios práticos e, *se quiser*, **abra Pull Requests/Merge Requests para sugerir melhorias**.
 4. Contribua com links, dicas e novos exercícios (veja o [CONTRIBUTING.md](CONTRIBUTING.md)).
 
 > 💡 **Caso prefira, siga o roadmap do [roadmap.sh/git-github](https://roadmap.sh/git-github).**
