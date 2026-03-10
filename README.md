@@ -82,7 +82,7 @@ Se você quer ajudar a melhorar este roadmap:
 2. Crie uma branch (`git checkout -b minha-sugestao`)
 3. Faça as alterações
 4. Commit seguindo boas práticas ([Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/))
-5. Abra um PR/MR 🚀
+5. Abra um **PR/MR** 🚀
 
 Veja mais detalhes em [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -92,3 +92,9 @@ Veja mais detalhes em [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Este projeto está sob a licença [MIT](LICENSE).  
 Sinta-se à vontade para usar e compartilhar! 🚀
+
+---
+
+*This roadmap was created and maintained by Angelina de Meiras Ottoni.*
+
+*AI tools (ChatGPT, OpenAI) were used to assist with drafting explanations, reviewing documentation, and improving learning materials. All content was reviewed and curated before publication.*
