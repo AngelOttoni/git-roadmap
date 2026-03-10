@@ -3,6 +3,7 @@
 >Neste submódulo você encontrará materiais para aprender a colaborar usando o **GitHub**, uma das plataformas mais populares para hospedagem de código e desenvolvimento colaborativo.
 
 O GitHub oferece ferramentas que facilitam a colaboração entre desenvolvedores, como **Pull Requests**, **revisão de código**, **issues** e **integração contínua**.
+
 ---
 
 ## Tópicos abordados
