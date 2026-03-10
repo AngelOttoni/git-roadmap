@@ -7,8 +7,9 @@ Obrigada por querer ajudar a melhorar este roadmap! 💜
 ## 🛠 **Passo a Passo**
 
 ### **1. Faça um fork do repositório**   
-    → [GitHub](https://github.com/AngelOttoni/git-roadmap)   
-    → [GitLab](https://gitlab.ppgmcs.com.br/lica-resources/best-practices/team/onboarding/git-workflow-roadmap.git)
+
+→ [GitHub](https://github.com/AngelOttoni/git-roadmap)   
+→ [GitLab](https://gitlab.ppgmcs.com.br/lica-resources/best-practices/team/onboarding/git-workflow-roadmap.git)
 
 **1.1 Depois clone o seu fork:**
 
@@ -78,6 +79,18 @@ Obrigada por querer ajudar a melhorar este roadmap! 💜
 - `good first issue` – boas primeiras contribuições
 - `projeto-final` – relacionado à entrega do projeto final
 
+---
+
+# 🤝 Templates
+
+Este repositório aceita contribuições tanto via **GitHub** quanto **GitLab**.
+
+Templates de contribuição estão disponíveis em:
+
+- [`.github/` → templates para GitHub](./.github/)
+- [`.gitlab/` → templates para GitLab](./.gitlab/)
+
+---
 ---
 ---
 
