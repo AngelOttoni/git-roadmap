@@ -81,7 +81,7 @@ Obrigada por querer ajudar a melhorar este roadmap! 💜
 ---
 ---
 
-# 📦 Contribuições de Projetos Finais
+# 📦 **Contribuições de Projetos Finais**
 
 Se você está entregando o projeto final do roadmap, siga os passos abaixo:
 

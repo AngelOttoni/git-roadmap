@@ -1,96 +1,141 @@
-# 🚀 Módulo Final – Projeto Colaborativo com Git e GitHub
+# 🚀 Módulo 05 – Final Project
 
-## 🎯 Objetivo Geral
-
-Aplicar, de forma prática e colaborativa, os conceitos e ferramentas aprendidos ao longo do roadmap, simulando um ambiente de desenvolvimento profissional com versionamento, colaboração em tempo real, revisão de código e documentação.
+## **Projeto Colaborativo com Git**
 
 ---
 
-## 🧩 Objetivos Específicos
+## 🎯 Objetivo
 
-* Simular um fluxo de trabalho real em duplas usando GitHub.
-* Utilizar branching strategies e commits semânticos com disciplina.
-* Resolver conflitos e colaborar por meio de pull requests (PRs).
-* Documentar o projeto com clareza e profissionalismo.
-* Desenvolver autoconfiança no uso de Git em equipe.
+Neste módulo final, você irá aplicar de forma prática os conceitos aprendidos ao longo do roadmap, simulando um ambiente real de desenvolvimento colaborativo utilizando **Git**.
+
+- O objetivo é consolidar habilidades como:
+
+  - criação e gerenciamento de branches
+  - escrita de commits claros e semânticos
+  - colaboração através de Pull Requests ou Merge Requests
+  - revisão de código
+  - resolução de conflitos
+  - documentação de projetos
 
 ---
+
+## 📚 Pré-requisitos
+
+Antes de iniciar este módulo, recomenda-se concluir os módulos anteriores:
+
+- **01 – Git Fundamentals**
+- **02 – Branching and History**
+- **03 – Collaboration**
+- **04 – Workflows**
+
+> Este projeto foi pensado para integrar os conhecimentos adquiridos ao longo de todo o roadmap.
 
 ## 🧭 Introdução
 
-Parabéns por ter chegado até aqui! Agora é hora de colocar em prática tudo o que você aprendeu. Neste módulo, você irá trabalhar em dupla para desenvolver um projeto real, simulando as rotinas de um time de desenvolvimento: criar branches, fazer commits semânticos, abrir pull requests, revisar mudanças, resolver conflitos e documentar o processo.
+Parabéns por ter chegado até aqui! 🎉
 
-Mais do que comandos, esta etapa é sobre vivenciar a **cultura de colaboração e versionamento** presente em equipes profissionais de tecnologia.
+Agora é hora de colocar em prática tudo o que você aprendeu. 
+
+Neste módulo, você irá trabalhar em dupla para desenvolver um projeto real, simulando as rotinas de um time de desenvolvimento: 
+
+- criar branches 
+- realizar commits seguindo boas práticas
+- abrir Pull Requests ou Merge Requests 
+- revisar mudanças
+- resolver conflitos
+- documentar o projeto
+
+> Mais do que executar comandos, este módulo busca simular a **cultura de colaboração presente em projetos de software profissionais**.
 
 ---
 
-## 🛠️ Instruções Gerais
+# 🛠️ Instruções Gerais
 
 ### 👥 Formação de Duplas *(Se aplicável)*
 
 * Escolha uma pessoa do seu grupo ou turma para formar uma dupla.
-* Conversem sobre disponibilidade e alinhem expectativas de trabalho.
+* Conversem sobre disponibilidade e alinhem expectativas e responsabilidades.
+* Organizem tarefas entre os membros.
 
 ### 📁 Criação do Repositório
 
-1. Criem um repositório do zero no GitHub (um só por dupla).
+1. Crie um repositório do zero no **GitHub** ou **GitLab** *(apenas um só por dupla)*.
 2. Um dos membros deve adicionar o outro como **colaborador** com permissão de escrita.
     - 📄 [Convidando uma equipe ou pessoa](https://docs.github.com/pt/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository#inviting-a-team-or-person)
     - 🎥 [Adicionar colaboradores no GitHub](https://www.youtube.com/watch?v=a3mqIoLdOE0)
-3. Escolham um dos projetos sugeridos (ou criem um próprio) e sigam as **missões** abaixo.
+3. Escolham um dos projetos sugeridos *(ou criem um próprio)* e sigam as **missões** abaixo.
 
 ---
 
-## 🧪 Missões Progressivas
+# 🧪 Missões do Projeto
+
+> O projeto está dividido em pequenas missões que simulam etapas comuns de desenvolvimento em equipe.
 
 ### 🧩 Missão 1 – Estrutura Inicial e Planejamento
 
-**Objetivo:** Preparar o repositório e alinhar a colaboração.
+**Objetivo:** organizar o projeto e planejar o trabalho.
 
-* Criem o `README.md` com:
+- Tarefas sugeridas:
 
-  * Nome do projeto
-  * Descrição
-  * Ferramentas utilizadas
-  * Responsabilidades da dupla
-* Criem uma branch `plan/projeto`.
-* Abram issues com tarefas (usando o [template de tarefa](../../.github/ISSUE_TEMPLATE/task.md)).
-* Apliquem etiquetas (labels) se desejarem.
+  - criar o `README.md`
+  - descrever o objetivo do projeto
+  - listar tecnologias utilizadas
+  - dividir responsabilidades entre os membros
 
----
+Você pode utilizar o template disponível em:
 
-### 🧪 Missão 2 – Branches, Commits e Sincronização
-
-**Objetivo:** Praticar branching e commits semânticos em colaboração.
-
-* Cada membro deve:
-
-  * Criar sua própria branch a partir de `main`
-  * Implementar uma pequena funcionalidade (ex: leitura de API, manipulação de dados etc.)
-  * Fazer commits seguindo o padrão [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/)
+[**TEMPLATE_README.md**](../05-project/templates/TEMPLATE_README.md)
 
 ---
 
-### 🧪 Missão 3 – Pull Requests e Revisão
+### 🌿 Missão 2 — Branches e Commits
 
-**Objetivo:** Simular um processo de revisão de código.
+**Objetivo:** praticar o fluxo de desenvolvimento com branches.
 
-* Criem **Pull Requests** (PRs) para suas contribuições.
-* Cada pessoa deve revisar o PR da outra (comentários, sugestões, aprovação).
-* Pratiquem a resolução de **conflitos** se necessário.
+- Cada integrante deve:
+
+  - criar uma branch a partir de `main`
+  - implementar uma pequena funcionalidade
+  - realizar commits utilizando [**Conventional Commits**](https://www.conventionalcommits.org/pt-br/v1.0.0/)
+
+Exemplo:
+
+```
+feat: adiciona integração com API
+fix: corrige erro de parsing de dados
+docs: atualiza instruções no README
+```
 
 ---
 
-### 🧪 Missão 4 – Entrega Final e Documentação
+### 🔁 Missão 3 — Pull Requests e Revisão
+
+**Objetivo:** simular revisão de código.
+
+Cada integrante deve:
+
+- abrir um **Pull Request** (GitHub) ou **Merge Request** (GitLab)
+- revisar a contribuição do colega
+- adicionar comentários ou sugestões
+- aprovar a mudança antes do merge
+
+Caso ocorram conflitos, resolva-os utilizando **Git**.
+
+---
+
+### 📦 Missão 4 – Documentação e Finalização
 
 **Objetivo:** Consolidar e compartilhar o projeto com o roadmap.
 
-* Finalizem o `README.md` do repositório da dupla → [`TEMPLATE_README.md`](../../modules/05-project/templates/TEMPLATE_README.md).
-* Sigam as instruções da seção **📦 Contribuições de Projetos Finais** no [`CONTRIBUTING.md`](../../CONTRIBUTING.md).
+- Finalize o projeto garantindo que:
+
+  - o `README.md` esteja claro → [`TEMPLATE_README.md`](../../modules/05-project/templates/TEMPLATE_README.md).
+  - as instruções de execução estejam corretas
+  - o histórico de commits esteja organizado
 
 ---
 
-## 💡 Sugestões de Projetos
+# 💡 Sugestões de Projetos
 
 > Os tutoriais sugeridos para este projeto final fazem parte da [Sprint de IA Generativa da Programaria](https://www.programaria.org/evento/programaria-sprint-ia-generativa/), realizada em agosto de 2025 — um programa de formação voltado à capacitação de pessoas diversas no universo da IA generativa.
 
@@ -112,9 +157,32 @@ Construa um sistema de recomendação de livros utilizando IA generativa e um da
 
 ### 🔹 Projeto 3: Projeto Livre
 
-* A dupla pode sugerir um projeto simples, desde que o foco seja aplicar Git de forma colaborativa.
+> *A dupla pode sugerir um projeto simples, desde que o foco seja aplicar **Git** de forma colaborativa.*
 
 ---
+
+# 📦 Entrega do Projeto
+
+Para enviar sua entrega:
+
+1. faça um **fork** deste repositório
+2. crie uma branch para sua entrega
+3. adicione um arquivo `.md` na pasta:
+
+    [`modules/05-project/submissions/`](../../modules/05-project/submissions/)
+
+4. utilize o template:
+
+    [`TEMPLATE_ENTREGA.md`](../05-project/templates/TEMPLATE_ENTREGA.md)
+
+5. abra um **Pull Request** (GitHub) ou **Merge Request** (GitLab)
+
+    O passo a passo completo está disponível em:
+
+    📄 [`CONTRIBUTING.md`](../../CONTRIBUTING.md)
+
+---
+
 
 ## 📦 Templates Disponíveis
 
@@ -134,22 +202,26 @@ Esses modelos simulam o dia a dia de equipes de desenvolvimento reais, promovend
 
 ## ✅ Checklist Final do Projeto
 
-* [ ] Uso correto de branches e PRs
-* [ ] Adoção do padrão de commits semânticos
-* [ ] Participação equilibrada entre os membros da dupla
-* [ ] Clareza e completude do README
-* [ ] Resolução de conflitos e revisão de código
-* [ ] Entrega final enviada via PR para o roadmap
+Antes de enviar sua entrega, verifique:
+
+- [ ]  uso correto de branches
+- [ ]  commits claros e semânticos
+- [ ]  Pull Request / Merge Request criado
+- [ ]  README completo
+- [ ]  documentação clara do projeto
 
 ---
 
-## 🌟 Hall da Fama
+# 🌟 Hall da Fama
 
-Os projetos entregues serão destacados em uma seção especial do repositório com:
+Os projetos enviados na pasta `submissions/` poderão ser destacados aqui após revisão.
 
-* Nome da dupla
-* Avatar dos membros
-* Link para o repositório do projeto
-* Selo de conclusão: `✅ Projeto Final Concluído`
+Cada entrada inclui:
+
+- nome da dupla
+- link para o repositório do projeto
+- reconhecimento de conclusão do roadmap
+
+🏆 **Parabéns por chegar até o final do roadmap!**
 
 ---
