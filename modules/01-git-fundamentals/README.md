@@ -13,7 +13,7 @@ Este é o primeiro passo para trabalhar com **versionamento de código em projet
 
 ---
 
-# 🎯 Objetivos
+## 🎯 Objetivos
 
 Ao concluir este módulo você deverá ser capaz de:
 
@@ -55,7 +55,9 @@ Ao concluir este módulo você deverá ser capaz de:
 
 ## 📝 Checklist do módulo:
 
-### **1. Instalar o Git**
+> ⚠️ **Esse checklist não substitui o estudo dos materiais recomendados. *Ele serve apenas para verificar se você praticou os conceitos.*** ⚠️
+
+[ ] **1. Instalar o Git**
 
 - Baixe e instale o Git a partir do [site oficial](https://git-scm.com/).
 
@@ -67,7 +69,7 @@ Ao concluir este módulo você deverá ser capaz de:
 
 ---
 
-### **2. Configurar seu usuário no Git**
+[ ] **2. Configurar seu usuário no Git**
 
 - Configure seu nome e e-mail para que seus commits sejam identificados corretamente.
 
@@ -80,9 +82,18 @@ Ao concluir este módulo você deverá ser capaz de:
 
 ---
 
-### **3. Criar um repositório local**
+[ ] **3. Criar um repositório local**
 
-- Crie uma pasta para o projeto e inicialize um repositório Git:
+- Primeiro crie uma pasta para o seu projeto e entre nela.
+
+    - Exemplo no terminal:
+
+        ```bash
+        mkdir meu-projeto
+        cd meu-projeto
+        ```
+
+- Agora inicialize o repositório Git:
 
     ```bash
     git init
@@ -90,9 +101,15 @@ Ao concluir este módulo você deverá ser capaz de:
 
     > Isso cria a pasta `.git`, onde o histórico do projeto será armazenado.
 
+>⚠️ Importante
+>
+>Execute `git init` **dentro da pasta do projeto**.
+>
+>Se você executar esse comando na pasta do usuário (por exemplo `C:\Users\seu-nome`), o Git começará a rastrear todos os arquivos dessa pasta.
+
 ---
 
-### 🧠 **4. Entendendo o modelo mental do Git**
+[ ] 🧠 **4. Entendendo o modelo mental do Git**
 
 Antes de continuar, é importante compreender como o Git organiza as mudanças no projeto.
 
@@ -102,7 +119,7 @@ Leia:
 
 ---
 
-### **5. Registrar mudanças com commits**
+[ ] **5. Registrar mudanças com commits**
 
 - Adicione arquivos ao controle de versão:
 
@@ -110,60 +127,23 @@ Leia:
     git add .
     ```
 
-    Crie um commit:
+- Crie um commit:
 
     ```bash
-    git commit -m "<tipo>: mensagem do commit"
+    git commit -m "mensagem do commit"
     ```
----
 
-#### 📝 Boas práticas para commits
+**Boas práticas para commits**
 
-Commits representam **unidades de mudança no projeto**.
+Commits representam unidades de mudança no projeto.
 
-Cada commit deve representar **uma alteração lógica e coesa**.
+Para aprender como escrever boas mensagens de commit e utilizar o padrão **Conventional Commits**, consulte:
 
-Evite mensagens genéricas como:
-
-```
-update
-ajustes
-mudanças
-```
-
-*Prefira mensagens claras e descritivas.*
-
-**Conventional Commits**
-
-Um padrão muito utilizado em projetos profissionais é o [**Conventional Commits**](https://www.conventionalcommits.org/pt-br/v1.0.0/).
-
-Formato:
-
-```bash
-<tipo>: descrição curta
-```
-
-Exemplos:
-
-```
-feat: adicionar função de busca de usuários
-fix: corrigir bug na função de login
-docs: atualizar README
-```
-
-Tipos comuns:
-
-* `feat` → nova funcionalidade
-* `fix` → correção de bug
-* `docs` → documentação
-* `refactor` → melhoria interna no código
-* `test` → testes
-* `style` → ajustes de formatação (espaços, quebras de linha etc.)
+📄 [Boas práticas de commits](./conventional_commits.md)
 
 ---
 
-
-## 6. Visualizar o histórico do projeto
+[ ] **6. Visualizar o histórico do projeto**
 
 - Use os comandos abaixo para inspecionar o repositório:
 
@@ -174,7 +154,7 @@ Tipos comuns:
 
 ---
 
-## 7. Criar um repositório remoto
+[ ] **7. Criar um repositório remoto**
 
 - Para compartilhar seu código, você pode utilizar uma plataforma de hospedagem Git, como:
 
@@ -187,7 +167,7 @@ Tipos comuns:
 
 ---
 
-## 8. Configurar autenticação com SSH
+[ ] **8. Configurar autenticação com SSH**
 
 Para enviar código para plataformas como GitHub ou GitLab, é necessário configurar um método de autenticação.
 
@@ -204,7 +184,11 @@ Consulte o guia oficial da plataforma que você estiver utilizando:
 > git@github.com:usuario/repositorio.git
 > ```
 
-## 9. Conectar o repositório local ao remoto
+ > Essa configuração precisa ser feita **apenas uma vez por computador**.
+
+---
+
+[ ] **9. Conectar o repositório local ao remoto**
 
 Após criar o repositório remoto, conecte-o ao repositório local:
 
@@ -214,7 +198,7 @@ git remote add origin <URL_DO_REPOSITORIO>
 
 ---
 
-## 10. Enviar seu código para o repositório remoto
+[ ] **10. Enviar seu código para o repositório remoto**
 
 Envie seu primeiro commit:
 
@@ -226,7 +210,7 @@ git push -u origin main
 
 ---
 
-## 11. Atualizar seu repositório local
+[ ] **11. Atualizar seu repositório local**
 
 Para trazer mudanças do repositório remoto:
 
@@ -236,7 +220,7 @@ git pull
 
 ---
 
-## 12. Clonar um repositório existente
+[ ] **12. Clonar um repositório existente**
 
 Você também pode baixar um repositório existente utilizando:
 
