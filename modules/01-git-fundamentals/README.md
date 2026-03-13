@@ -4,10 +4,10 @@ Neste módulo você aprenderá os **conceitos fundamentais do Git** e os comando
 
 Ao final deste módulo você será capaz de:
 
-* criar um repositório Git
-* registrar alterações com commits
-* visualizar o histórico de mudanças
-* conectar um repositório local a um repositório remoto
+- criar um repositório Git
+- registrar alterações com commits
+- visualizar o histórico de mudanças
+- conectar um repositório local a um repositório remoto
 
 Este é o primeiro passo para trabalhar com **versionamento de código em projetos reais**.
 
@@ -17,9 +17,9 @@ Este é o primeiro passo para trabalhar com **versionamento de código em projet
 
 Ao concluir este módulo você deverá ser capaz de:
 
-* entender o que é **controle de versão**
-* instalar e configurar o **Git**
-* utilizar comandos essenciais:
+- entender o que é **controle de versão**
+- instalar e configurar o **Git**
+- utilizar comandos essenciais:
 
     ```bash
     init
@@ -32,36 +32,38 @@ Ao concluir este módulo você deverá ser capaz de:
     pull
     ```
 
-> Antes de começar a usar comandos, é importante entender como o **Git** organiza as mudanças no projeto.
+---
+
+## 📖 Materiais recomendados
+
+**Escolha os recursos que melhor se adaptam ao seu estilo de aprendizagem.**
+
+### Se você aprende melhor lendo
+
+* 📄 [Pro Git (Capítulos 1 e 2)](https://git-scm.com/book/pt-br/v2)
+* 📄 [Guia Rápido do Git](https://rogerdudler.github.io/git-guide/index.pt_BR.html)
+
+### Se você aprende melhor com vídeos
+
+* 🎥 [Entendendo GIT | (não é um tutorial!)](https://www.youtube.com/watch?v=6Czd1Yetaac)
+* 🎥 [GIT: Minicurso para Você Sair do Zero! (Aprenda em 45 Minutos)](https://www.youtube.com/watch?v=ts-H3W1uLMM)
+* 🎥 [Git e GitHub](https://www.youtube.com/playlist?list=PLhkO7OMKgT_rqwGYldqcFxyN4yjFgmDh8)
+* 🎥 [Curso de Git e Github [Completo] - Aprenda o Essencial em 2 horas](https://www.youtube.com/watch?v=192HgwRgOYE)
 
 ---
 
-## 📖 Materiais Recomendados
+# 📝 Checklist do módulo
 
-*Escolha os recursos que melhor se adaptam ao seu estilo de aprendizagem:*
-
-**Se você aprende melhor lendo**
-- 📄 [Pro Git (Capítulos 1 e 2)](https://git-scm.com/book/pt-br/v2)
-- 📄 [Guia Rápido do Git](https://rogerdudler.github.io/git-guide/index.pt_BR.html)
-
-**Se você aprende melhor com vídeos**
-- 🎥 [Entendendo GIT | (não é um tutorial!)](https://www.youtube.com/watch?v=6Czd1Yetaac)
-- 🎥 [GIT: Minicurso para Você Sair do Zero! (Aprenda em 45 Minutos)](https://www.youtube.com/watch?v=ts-H3W1uLMM)
-- 🎥 [Git e GitHub](https://www.youtube.com/playlist?list=PLhkO7OMKgT_rqwGYldqcFxyN4yjFgmDh8)
-- 🎥 [Curso de Git e Github [Completo] - Aprenda o Essencial em 2 horas](https://www.youtube.com/watch?v=192HgwRgOYE)
-
+> ⚠️ **Esse checklist não substitui o estudo dos materiais recomendados.**
+> Ele serve apenas para verificar se você **praticou os conceitos do módulo**.
 
 ---
 
-## 📝 Checklist do módulo:
+## 🛠 Instalar o Git
 
-> ⚠️ **Esse checklist não substitui o estudo dos materiais recomendados. *Ele serve apenas para verificar se você praticou os conceitos.*** ⚠️
+* [ ] Baixar e instalar o Git a partir do [site oficial](https://git-scm.com/)
 
-[ ] **1. Instalar o Git**
-
-- Baixe e instale o Git a partir do [site oficial](https://git-scm.com/).
-
-- Verifique a instalação:
+    Verifique se a instalação foi concluída corretamente:
 
     ```bash
     git --version
@@ -69,73 +71,73 @@ Ao concluir este módulo você deverá ser capaz de:
 
 ---
 
-[ ] **2. Configurar seu usuário no Git**
+## 🛠 Configurar seu usuário no Git
 
-- Configure seu nome e e-mail para que seus commits sejam identificados corretamente.
+* [ ] Configurar nome e e-mail que aparecerão nos commits
 
     ```bash
     git config --global user.name "Seu Nome"
     git config --global user.email "seu@email.com"
     ```
 
-    > Essas informações serão registradas em cada commit.
+> Essas informações serão registradas em cada commit.
 
 ---
 
-[ ] **3. Criar um repositório local**
+## 🛠 Criar um repositório local
 
-- Primeiro crie uma pasta para o seu projeto e entre nela.
+* [ ] Criar uma pasta para o projeto
 
-    - Exemplo no terminal:
+    Exemplo no terminal:
 
-        ```bash
-        mkdir meu-projeto
-        cd meu-projeto
-        ```
+    ```bash
+    mkdir meu-projeto
+    cd meu-projeto
+    ```
 
-- Agora inicialize o repositório Git:
+* [ ] Agora inicialize o repositório Git:
 
     ```bash
     git init
     ```
 
-    > Isso cria a pasta `.git`, onde o histórico do projeto será armazenado.
+> Isso cria a pasta `.git`, onde o histórico do projeto será armazenado.
 
->⚠️ Importante
->
->Execute `git init` **dentro da pasta do projeto**.
->
->Se você executar esse comando na pasta do usuário (por exemplo `C:\Users\seu-nome`), o Git começará a rastrear todos os arquivos dessa pasta.
+⚠️ **Importante**
+
+Execute `git init` **dentro da pasta do projeto**.
+
+Se você executar esse comando na pasta do usuário (por exemplo `C:\Users\seu-nome`), o Git começará a rastrear **todos os arquivos dessa pasta**.
 
 ---
 
-[ ] 🧠 **4. Entendendo o modelo mental do Git**
+## 🧠 Entender o modelo mental do Git
 
-Antes de continuar, é importante compreender como o Git organiza as mudanças no projeto.
-
-Leia:
+* [ ] Ler o material abaixo antes de continuar
 
 ➡️ [Modelo Mental do Git](./git-mental-model.md)
 
+Compreender esse modelo ajuda a entender **como o Git registra e organiza mudanças no projeto**.
+
 ---
 
-[ ] **5. Registrar mudanças com commits**
+## 🛠 Registrar mudanças com commits
 
-- Adicione arquivos ao controle de versão:
+* [ ] Adicionar arquivos ao controle de versão
 
     ```bash
     git add .
     ```
 
-- Crie um commit:
+* [ ] Criar um commit:
 
     ```bash
     git commit -m "mensagem do commit"
     ```
 
-**Boas práticas para commits**
+### Boas práticas para commits
 
-Commits representam unidades de mudança no projeto.
+Commits representam **unidades de mudança no projeto**.
 
 Para aprender como escrever boas mensagens de commit e utilizar o padrão **Conventional Commits**, consulte:
 
@@ -143,9 +145,9 @@ Para aprender como escrever boas mensagens de commit e utilizar o padrão **Conv
 
 ---
 
-[ ] **6. Visualizar o histórico do projeto**
+## 🛠 Visualizar o histórico do projeto
 
-- Use os comandos abaixo para inspecionar o repositório:
+* [ ] Inspecionar o estado e histórico do repositório
 
     ```bash
     git status
@@ -154,78 +156,86 @@ Para aprender como escrever boas mensagens de commit e utilizar o padrão **Conv
 
 ---
 
-[ ] **7. Criar um repositório remoto**
+## 🛠 Criar um repositório remoto
 
-- Para compartilhar seu código, você pode utilizar uma plataforma de hospedagem Git, como:
+* [ ] Criar uma conta em uma plataforma de hospedagem Git
 
-    - GitHub
-    - GitLab
+    Exemplos de plataformas:
 
-- Acesse [github.com](https://github.com/) ou [gitlab.com](https://gitlab.com/) e registre-se para obter uma conta gratuita, que será usada para hospedar seus repositórios remotos.
+    * GitHub
+    * GitLab
 
-> Após fazer sua conta, crie um novo repositório na plataforma escolhida.
+    Acesse:
 
----
+    * [https://github.com](https://github.com)
+    * [https://gitlab.com](https://gitlab.com)
 
-[ ] **8. Configurar autenticação com SSH**
-
-Para enviar código para plataformas como GitHub ou GitLab, é necessário configurar um método de autenticação.
-
-Uma das formas mais utilizadas é a **autenticação via SSH**, que permite conectar seu computador ao repositório remoto de forma segura, sem precisar digitar usuário e senha a cada operação.
-
-Consulte o guia oficial da plataforma que você estiver utilizando:
-
-- 🔐 [Configurar SSH no GitHub](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh)
-- 🔐 [Configurar SSH no GitLab](https://docs.gitlab.com/ee/user/ssh.html)
-
-> Após configurar sua chave SSH, você poderá utilizar URLs do tipo:
->
-> ```
-> git@github.com:usuario/repositorio.git
-> ```
-
- > Essa configuração precisa ser feita **apenas uma vez por computador**.
+    Crie um novo repositório na plataforma escolhida.
 
 ---
 
-[ ] **9. Conectar o repositório local ao remoto**
+## 🔐 Configurar autenticação com SSH
 
-Após criar o repositório remoto, conecte-o ao repositório local:
+* [ ] Configurar uma chave SSH para autenticação
 
-```bash
-git remote add origin <URL_DO_REPOSITORIO>
-```
+    Para enviar código para plataformas como GitHub ou GitLab, é necessário configurar um método de autenticação.
 
----
+    Uma das formas mais utilizadas é a **autenticação via SSH**, que permite conectar seu computador ao repositório remoto **sem precisar digitar usuário e senha a cada operação**.
 
-[ ] **10. Enviar seu código para o repositório remoto**
+    Consulte o guia oficial da plataforma que você estiver utilizando:
 
-Envie seu primeiro commit:
+    * 🔐 [Configurar SSH no GitHub](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh)
+    * 🔐 [Configurar SSH no GitLab](https://docs.gitlab.com/ee/user/ssh.html)
 
-```bash
-git push -u origin main
-```
+    Após configurar sua chave SSH, você poderá utilizar URLs como:
 
-> **📝Observação:** o parâmetro `-u` (abreviação de `--set-upstream`) define a branch remota `origin/main` como referência de rastreamento da sua branch local `main`. Após executar esse comando pela primeira vez, nos próximos envios você poderá utilizar apenas `git push` (e `git pull`), pois o Git já saberá para qual branch remota enviar ou buscar atualizações.
+    ```
+    git@github.com:usuario/repositorio.git
+    ```
 
----
-
-[ ] **11. Atualizar seu repositório local**
-
-Para trazer mudanças do repositório remoto:
-
-```bash
-git pull
-```
+> Essa configuração precisa ser feita **apenas uma vez por computador**.
 
 ---
 
-[ ] **12. Clonar um repositório existente**
+## 🛠 Conectar o repositório local ao remoto
 
-Você também pode baixar um repositório existente utilizando:
+* [ ] Conectar o repositório local ao remoto
 
-```bash
-git clone <URL_DO_REPOSITORIO>
-```
+    ```bash
+    git remote add origin <URL_DO_REPOSITORIO>
+    ```
+
+---
+
+## 🛠 Enviar seu código para o repositório remoto
+
+* [ ] Enviar o primeiro commit
+
+    ```bash
+    git push -u origin main
+    ```
+
+> **Observação:** o parâmetro `-u` (`--set-upstream`) define a branch remota `origin/main` como referência para sua branch local `main`.
+> Após executar esse comando pela primeira vez, você poderá utilizar apenas `git push` e `git pull`.
+
+---
+
+## 🛠 Atualizar seu repositório local
+
+* [ ] Trazer mudanças do repositório remoto
+
+    ```bash
+    git pull
+    ```
+
+---
+
+## 🛠 Clonar um repositório existente
+
+* [ ] Clonar um repositório remoto
+
+    ```bash
+    git clone <URL_DO_REPOSITORIO>
+    ```
 
 Após clonar, faça uma alteração simples no `README.md`, crie um commit e envie a alteração.
