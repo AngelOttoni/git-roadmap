@@ -95,6 +95,6 @@ Sinta-se à vontade para usar e compartilhar! 🚀
 
 ---
 
-*This roadmap was created and maintained by Angelina de Meiras Ottoni.*
+*Este roadmap foi criado e é mantido por Angelina de Meiras Ottoni.*
 
-*AI tools (ChatGPT, OpenAI) were used to assist with drafting explanations, reviewing documentation, and improving learning materials. All content was reviewed and curated before publication.*
+*Ferramentas de IA (ChatGPT, OpenAI) foram utilizadas para auxiliar na redação de explicações, revisão da documentação e aprimoramento dos materiais de aprendizagem. Todo o conteúdo foi revisado e curado antes da publicação.*
